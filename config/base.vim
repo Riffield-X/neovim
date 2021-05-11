@@ -13,11 +13,12 @@ if has('autocmd')
     filetype plugin indent on
 endif
 
-if has('multi_byte')
-    set encoding=utf-8
-    set fileencoding=utf-8
-    set fileencodings=ucs-bom,utf-8,gb18030,cp936,latin1
-endif
+"if has('multi_byte')
+"    set encoding=utf-8
+"    set fileencoding=utf-8
+"    set fileencodings=ucs-bom,utf-8,gb18030,cp936,latin1
+"endif
+set encoding=utf-8
 
 " 设置行号
 set number
@@ -85,7 +86,7 @@ set ttimeoutlen=10
 " 更新时间100ms 默认4000ms 写入swap的时间
 set updatetime=100
 " 允许使用鼠标, normal生效，a则是全模式生效
-set mouse=n
+set mouse=a
 
 set winaltkeys=no
 " 延迟绘制，提升性能
